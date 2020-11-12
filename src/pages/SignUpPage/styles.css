@@ -1,0 +1,31 @@
+.loginPageContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #e5e5e5;
+  display: flex;
+  overflow: hidden;
+}
+
+.left,
+.right {
+  width: 50%;
+  height: 100%;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  filter: hue-rotate(215deg) blur(1px);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightContent {
+  max-width: 600px;
+}
