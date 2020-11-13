@@ -6,6 +6,7 @@ import bg from "../../assets/bg.jpeg";
 
 function LoginPage() {
   const history = useHistory();
+
   return (
     <div className="loginPageContainer">
       <div className="left">
