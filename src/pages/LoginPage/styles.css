@@ -27,5 +27,82 @@
 }
 
 .rightContent {
+  width: 100%;
   max-width: 600px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #565656;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.inputDiv > label {
+  font-size: 1.25rem;
+  color: #565656;
+  margin-bottom: 1rem;
+}
+
+.inputDiv > input {
+  background-color: transparent;
+  border: 1px solid #cccccc;
+  outline: none;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  height: 50px;
+  color: #565656;
+}
+
+.login {
+  width: 100%;
+  font-size: 1rem;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 1rem;
+  background: linear-gradient(92.05deg, #f180c1 4.55%, #a450c9 95.79%);
+  border-radius: 5px;
+  padding: 0.5rem;
+  height: 50px;
+}
+
+.forgotPass {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #9d9b9b;
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: right;
+  display: block;
+}
+
+.subText {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #565656;
+  margin-bottom: 2rem;
+}
+
+.signUp {
+  width: 100%;
+  border: none;
+  margin-right: 1rem;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: #e77cca;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 400;
+  outline: none;
 }
