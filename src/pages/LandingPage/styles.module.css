@@ -1,0 +1,161 @@
+.landingPageContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #e5e5e5;
+  display: flex;
+  overflow: hidden;
+}
+
+.left,
+.right {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.filterBg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(167.9deg, #fc66a4 0%, #993cff 98.7%);
+  opacity: 0.8;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightContent {
+  max-width: 600px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #565656;
+}
+
+.btns {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.loginBtn {
+  width: 150px;
+  height: 50px;
+  border: none;
+  margin-right: 1rem;
+  border-radius: 0.25rem;
+  background-color: #e77cca;
+  color: #fafafa;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 400;
+  outline: none;
+}
+
+.signUpBtn {
+  width: 150px;
+  height: 50px;
+  border: none;
+  margin-right: 1rem;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: #e77cca;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 400;
+  outline: none;
+}
+
+.separator {
+  width: 100%;
+  height: 2px;
+  background-color: #646464;
+  opacity: 0.25;
+  margin-bottom: 2rem;
+}
+
+.card {
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 4px 0px #000000 13%;
+}
+
+.cardIcon {
+  margin-right: 1rem;
+  height: 4rem;
+}
+
+.cardText {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #848484;
+}
+
+@media (max-width: 700px) {
+  .left {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  .right {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .rightContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    min-height: 600px;
+    z-index: 3;
+  }
+
+  .title {
+    color: #ffffff;
+  }
+
+  .loginBtn {
+    width: 100%;
+    height: 70px;
+    border: 1px solid #ffffff;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .signUpBtn {
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    color: #e77cca;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .card,
+  .separator {
+    display: none;
+  }
+}

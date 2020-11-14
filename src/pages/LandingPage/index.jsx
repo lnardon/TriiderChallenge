@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 
-import "./styles.css";
+import styles from "./styles.module.css";
 import bg from "../../assets/bg.jpeg";
 import balloon from "../../assets/balloon.png";
 import tada from "../../assets/tada.png";
@@ -9,40 +9,43 @@ import tada from "../../assets/tada.png";
 function LandingPage() {
   const history = useHistory();
   return (
-    <div className="landingPageContainer">
-      <div className="left">
-        <div className="filterBg"></div>
-        <img src={bg} alt="BG" className="bg" />
+    <div className={styles.landingPageContainer}>
+      <div className={styles.left}>
+        <div className={styles.filterBg}></div>
+        <img src={bg} alt="BG" className={styles.bg} />
       </div>
-      <div className="right">
-        <div className="rightContent">
-          <h1 className="title">
+      <div className={styles.right}>
+        <div className={styles.rightContent}>
+          <h1 className={styles.title}>
             Gerenciador de eventos para animadores de festas
           </h1>
-          <div className="btns">
-            <button className="loginBtn" onClick={() => history.push("/login")}>
+          <div className={styles.btns}>
+            <button
+              className={styles.loginBtn}
+              onClick={() => history.push("/login")}
+            >
               Entrar
             </button>
             <button
-              className="signUpBtn"
+              className={styles.signUpBtn}
               onClick={() => history.push("/signup")}
             >
               Criar Conta
             </button>
           </div>
 
-          <div className="separator"></div>
+          <div className={styles.separator}></div>
 
-          <div className="card">
-            <img src={balloon} alt="icon" className="cardIcon" />
-            <h3 className="cardText">
+          <div className={styles.card}>
+            <img src={balloon} alt="icon" className={styles.cardIcon} />
+            <h3 className={styles.cardText}>
               Cadastre suas festas e organize sua agenda!
             </h3>
           </div>
 
-          <div className="card">
-            <img src={tada} alt="icon" className="cardIcon" />
-            <h3 className="cardText">
+          <div className={styles.card}>
+            <img src={tada} alt="icon" className={styles.cardIcon} />
+            <h3 className={styles.cardText}>
               Informe sua disponibilidade de dias e horários e crie um
               calendário personalizado
             </h3>

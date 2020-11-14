@@ -1,0 +1,258 @@
+.loginPageContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #e5e5e5;
+  display: flex;
+  overflow: hidden;
+}
+
+.left,
+.right {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.filterBg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(167.9deg, #fc66a4 0%, #993cff 98.7%);
+  opacity: 0.8;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightContent {
+  width: 100%;
+  max-width: 600px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #565656;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.inputDiv > label {
+  font-size: 1.25rem;
+  color: #565656;
+  margin-bottom: 1rem;
+}
+
+.inputDiv > input {
+  background-color: transparent;
+  border: 1px solid #cccccc;
+  outline: none;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  height: 50px;
+  color: #565656;
+}
+
+.login {
+  width: 100%;
+  font-size: 1rem;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 1rem;
+  background: linear-gradient(92.05deg, #f180c1 4.55%, #a450c9 95.79%);
+  border-radius: 5px;
+  padding: 0.5rem;
+  height: 50px;
+}
+
+.forgotPass {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #9d9b9b;
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: right;
+  display: block;
+}
+
+.separator {
+  width: 100%;
+  height: 2px;
+  background-color: #646464;
+  opacity: 0.25;
+  margin-bottom: 2rem;
+}
+
+.subText {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #565656;
+  margin-bottom: 2rem;
+}
+
+.signUp {
+  width: 100%;
+  border: none;
+  margin-right: 1rem;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: #e77cca;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 400;
+  outline: none;
+}
+
+@media (max-width: 700px) {
+  .left {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  .right {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .rightContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    min-height: 600px;
+    z-index: 3;
+  }
+
+  .title {
+    color: #ffffff;
+  }
+
+  .mobileLogin {
+    background-color: #fff;
+    width: 90%;
+    padding: 4rem 2rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.17);
+    border-radius: 5px;
+  }
+}
+
+.rightContent1 {
+  width: 100%;
+  max-width: 600px;
+}
+
+.rightContent2 {
+  width: 100%;
+  max-width: 600px;
+}
+
+.nextBtn {
+  width: 100%;
+  font-size: 1rem;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 2rem;
+  background: linear-gradient(92.05deg, #f180c1 4.55%, #a450c9 95.79%);
+  border-radius: 5px;
+  padding: 0.5rem;
+  height: 50px;
+}
+
+#job {
+  outline: none;
+  background-color: transparent;
+  padding: 1rem;
+  border: none;
+  height: 50px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #ee7ec2;
+  cursor: pointer;
+}
+
+.dayChecked {
+  background: #f097ce;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fafafa;
+  border-radius: 50%;
+  border: 1px solid #cccccc;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.dayUnchecked {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fafafa;
+  border-radius: 50%;
+  border: 1px solid #cccccc;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.turnsDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.turnChecked {
+  background: #f097ce;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: content-box;
+  border: 1px solid transparent;
+}
+
+.turnUnchecked {
+  background: transparent;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #cccccc;
+  box-sizing: content-box;
+}
+
+#price {
+  outline: none;
+  background-color: transparent;
+  padding: 1rem;
+  border: none;
+  height: 50px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #ee7ec2;
+  cursor: pointer;
+}
