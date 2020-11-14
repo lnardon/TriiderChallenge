@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
 import styles from "./styles.module.css";
@@ -6,6 +6,23 @@ import bg from "../../assets/bg.jpeg";
 
 function LoginPage() {
   const history = useHistory();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  async function login() {
+    let users = await fetch("http://localhost:3000/users");
+    let parsedUsers = await users.json();
+    let hasUser = false;
+    parsedUsers.forEach((user) => {
+      if (user.email === email && user.password === password) {
+        history.push(`/homepage/${user.id}`);
+        return;
+      }
+    });
+    if (hasUser) {
+      alert("Usuario inexistente");
+    }
+  }
 
   return (
     <div className={styles.loginPageContainer}>
@@ -19,16 +36,23 @@ function LoginPage() {
           <div className={styles.mobileLogin}>
             <div className={styles.inputDiv}>
               <label htmlFor="email">E-mail</label>
-              <input type="email" name="email" id="email" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </div>
             <div className={styles.inputDiv}>
               <label htmlFor="pass">Senha</label>
-              <input type="password" name="pass" id="pass" />
+              <input
+                type="password"
+                name="pass"
+                id="pass"
+                onChange={(e) => setPassword(e.target.value)}
+              />
             </div>
-            <button
-              className={styles.login}
-              onClick={() => history.push("/homepage")}
-            >
+            <button className={styles.login} onClick={login}>
               Entrar
             </button>
 

@@ -4,6 +4,7 @@
       "id": 1,
       "name": "usuário teste",
       "email": "teste@teste.com",
+      "password": "teste",
       "category": "magician",
       "week_days": [
         "monday",
