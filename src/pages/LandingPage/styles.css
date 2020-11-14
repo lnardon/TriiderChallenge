@@ -8,14 +8,22 @@
 
 .left,
 .right {
+  position: relative;
   width: 50%;
   height: 100%;
+}
+
+.filterBg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(167.9deg, #fc66a4 0%, #993cff 98.7%);
+  opacity: 0.8;
 }
 
 .bg {
   width: 100%;
   height: 100vh;
-  filter: hue-rotate(215deg) blur(1px);
 }
 
 .right {
@@ -79,7 +87,7 @@
 }
 
 .card {
-  width: 400px;
+  width: 100%;
   background-color: #ffffff;
   margin-bottom: 2rem;
   border-radius: 0.5rem;
@@ -99,4 +107,55 @@
   line-height: 1.5rem;
   font-weight: 400;
   color: #848484;
+}
+
+@media (max-width: 700px) {
+  .left {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  .right {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .rightContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    min-height: 600px;
+  }
+
+  .title {
+    color: #ffffff;
+  }
+
+  .loginBtn {
+    width: 100%;
+    height: 70px;
+    border: 1px solid #ffffff;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .signUpBtn {
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    color: #e77cca;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .card,
+  .separator {
+    display: none;
+  }
 }
