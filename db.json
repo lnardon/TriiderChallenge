@@ -15,8 +15,44 @@
         "saturday",
         "sunday"
       ],
-      "day_shifts": ["morning", "afternoon", "night"],
+      "day_shifts": [
+        "morning",
+        "afternoon",
+        "night"
+      ],
       "price": 200
+    },
+    {
+      "name": "Lucas",
+      "email": "lucas@admin.com",
+      "password": "123",
+      "category": "Magician",
+      "week_days": [
+        {
+          "label": "T",
+          "checked": true,
+          "name": "tuesday"
+        },
+        {
+          "label": "Q",
+          "checked": true,
+          "name": "thursday"
+        },
+        {
+          "label": "S",
+          "checked": true,
+          "name": "saturday"
+        }
+      ],
+      "day_shifts": [
+        {
+          "label": "Tarde",
+          "checked": true,
+          "name": "afternoon"
+        }
+      ],
+      "price": "250",
+      "id": 2
     }
   ],
   "events": [

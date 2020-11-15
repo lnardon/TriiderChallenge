@@ -1,0 +1,105 @@
+.homepageContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e5e5;
+}
+
+.modalBg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalContent {
+  position: absolute;
+  width: 90%;
+  max-width: 600px;
+  background-color: #fff;
+  z-index: 11;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.17);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.modalTitle {
+  width: 100%;
+  text-align: start;
+  color: #f883ba;
+  margin-bottom: 2rem;
+}
+
+.closeBtn {
+  position: absolute;
+  width: 20px;
+  top: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.inputDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.inputDiv > label {
+  color: #565656;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.inputDiv > input {
+  color: #565656;
+  font-size: 1.25rem;
+  font-weight: 400;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  outline: none;
+}
+
+.createBtn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.25rem;
+  color: #fff;
+  background: linear-gradient(92.05deg, #f180c1 4.55%, #a450c9 95.79%);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.createDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  padding: 2rem;
+}
+
+.createEventBtn {
+  display: block;
+  border: none;
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: #f180c1;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+}
