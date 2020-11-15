@@ -58,12 +58,20 @@
   "events": [
     {
       "id": 1,
-      "user_id": 1,
+      "user_id": "1",
       "name": "evento teste",
       "date": "1574433747316",
       "week_day": "friday",
       "day_shift": "morning",
       "address": "Rua Teste, 200 - 221B"
+    },
+    {
+      "user_id": "1",
+      "name": "Teste",
+      "week_day": "22/12/2020",
+      "day_shift": "Tarde",
+      "address": "Rua 3",
+      "id": 2
     }
   ]
 }
