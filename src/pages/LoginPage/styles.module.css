@@ -10,20 +10,20 @@
 .right {
   position: relative;
   width: 50%;
-  height: 100%;
+  min-height: 100vh;
 }
 
 .filterBg {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(167.9deg, #fc66a4 0%, #993cff 98.7%);
   opacity: 0.8;
 }
 
 .bg {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .right {
@@ -124,14 +124,28 @@
 }
 
 @media (max-width: 700px) {
+  .loginPageContainer {
+    height: auto;
+    overflow: auto;
+  }
+  .filterBg {
+    height: 100%;
+  }
+
+  .bg {
+    height: 100%;
+  }
+
   .left {
     width: 100%;
+    height: 100%;
     position: absolute;
     z-index: 1;
   }
   .right {
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    padding: 1rem;
   }
 
   .rightContent {
@@ -139,8 +153,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80%;
-    min-height: 600px;
     z-index: 3;
   }
 

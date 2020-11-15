@@ -140,10 +140,10 @@ function SignUpPage() {
               </div>
               <div className={styles.inputDiv}>
                 <label>Selecione os dias que trabalhará</label>
-                <div className={styles.turnsDiv}>
+                <div className={styles.daysDiv}>
                   {week_days.map((day, index) => {
                     return (
-                      <h3
+                      <div
                         key={index}
                         onClick={() => checkDay(index)}
                         className={
@@ -151,7 +151,7 @@ function SignUpPage() {
                         }
                       >
                         {day.label}
-                      </h3>
+                      </div>
                     );
                   })}
                 </div>
@@ -160,7 +160,7 @@ function SignUpPage() {
                   <div className={styles.turnsDiv}>
                     {day_shifts.map((turn, index) => {
                       return (
-                        <h3
+                        <div
                           key={index}
                           onClick={() => checkTurn(index)}
                           className={
@@ -170,7 +170,7 @@ function SignUpPage() {
                           }
                         >
                           {turn.label}
-                        </h3>
+                        </div>
                       );
                     })}
                   </div>
@@ -180,7 +180,7 @@ function SignUpPage() {
                   <input
                     type="number"
                     name="price"
-                    className={styles.job}
+                    className={styles.price}
                     onChange={(e) => setPrice(e.target.value)}
                   />
                 </div>
