@@ -72,21 +72,33 @@ function Modal({ setIsOpen }) {
             style={{ marginRight: "1rem", width: "50%" }}
           >
             <label htmlFor="date">Data</label>
-            <input
+            <select
               type="text"
               name="date"
               id="date"
               onChange={(e) => setDay(e.target.value)}
-            />
+            >
+              <option value="monday">Segunda</option>
+              <option value="tuesday">Terça</option>
+              <option value="wednesday">Quarta</option>
+              <option value="thursday">Quinta</option>
+              <option value="friday">Sexta</option>
+              <option value="saturday">Sabado</option>
+              <option value="sunday">Domingo</option>
+            </select>
           </div>
           <div className={styles.inputDiv} style={{ width: "50%" }}>
             <label htmlFor="shift">Turno</label>
-            <input
+            <select
               type="text"
               name="shift"
               id="shift"
               onChange={(e) => setShift(e.target.value)}
-            />
+            >
+              <option value="morning">Manhã</option>
+              <option value="afternoon">Tarde</option>
+              <option value="night">Noite</option>
+            </select>
           </div>
         </div>
 

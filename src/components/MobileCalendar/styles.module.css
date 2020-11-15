@@ -1,0 +1,22 @@
+.mobileCalendarContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.calendarDay {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.17);
+  padding: 1rem;
+}
