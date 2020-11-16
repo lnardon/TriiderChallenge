@@ -107,6 +107,22 @@
       "day_shift": "morning",
       "address": "Github",
       "id": 6
+    },
+    {
+      "user_id": "2",
+      "name": "Teste 3",
+      "week_day": "friday",
+      "day_shift": "afternoon",
+      "address": "Github",
+      "id": 7
+    },
+    {
+      "user_id": "1",
+      "name": "Teste Lucas",
+      "week_day": "monday",
+      "day_shift": "afternoon",
+      "address": "Porto alegre",
+      "id": 8
     }
   ]
 }

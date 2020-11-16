@@ -9,9 +9,9 @@ function DesktopCalendar({ calendarData }) {
   return (
     <div className={styles.calendarBg}>
       <div className={styles.calendarDiv}>
-        {calendarData.map((data, i) => {
+        {calendarData.map((data, index) => {
           return (
-            <div className={styles.dayDiv}>
+            <div className={styles.dayDiv} key={index}>
               <h1 className={styles.weekDay}>{data.title}</h1>
               {data.available ? (
                 data.shifts.map((shift, index) => {
@@ -31,9 +31,9 @@ function DesktopCalendar({ calendarData }) {
                 })
               ) : (
                 <>
-                  <UnavailableSlot />
-                  <UnavailableSlot />
-                  <UnavailableSlot />
+                  <UnavailableSlot key={0} />
+                  <UnavailableSlot key={1} />
+                  <UnavailableSlot key={2} />
                 </>
               )}
             </div>
