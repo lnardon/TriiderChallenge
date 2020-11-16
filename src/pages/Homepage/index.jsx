@@ -133,7 +133,7 @@ function Homepage() {
       }
       setCalendarData([...auxData]);
     })();
-  }, [refresher]);
+  }, [refresher, calendarData]);
 
   return (
     <div className={styles.homepageContainer}>

@@ -39,6 +39,26 @@ function SignUpPage() {
     setWeek_days(aux);
   }
 
+  function saveDays() {
+    let aux = [];
+    week_days.forEach((day) => {
+      if (day.checked) {
+        aux.push(day.name);
+      }
+    });
+    return aux;
+  }
+
+  function saveShifts() {
+    let aux = [];
+    day_shifts.forEach((shift) => {
+      if (shift.checked) {
+        aux.push(shift.name);
+      }
+    });
+    return aux;
+  }
+
   async function createUser() {
     let days = week_days.filter((d) => d.checked);
     let shifts = day_shifts.filter((d) => d.checked);
@@ -53,8 +73,8 @@ function SignUpPage() {
         email: email,
         password: password,
         category: category,
-        week_days: days,
-        day_shifts: shifts,
+        week_days: saveDays(),
+        day_shifts: saveShifts(),
         price: price,
       }),
     });

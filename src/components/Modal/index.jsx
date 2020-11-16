@@ -6,8 +6,8 @@ import closeIcon from "../../assets/close.svg";
 function Modal({ setIsOpen, refresher }) {
   const [name, setName] = useState("");
   const [place, setPlace] = useState("");
-  const [day, setDay] = useState("");
-  const [shift, setShift] = useState("");
+  const [day, setDay] = useState("monday");
+  const [shift, setShift] = useState("morning");
 
   async function addEvent() {
     let respose = await fetch("http://localhost:3000/events", {
