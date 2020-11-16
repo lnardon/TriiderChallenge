@@ -73,6 +73,14 @@
       "day_shift": "afternoon",
       "address": "Triider",
       "id": 4
+    },
+    {
+      "user_id": "2",
+      "name": "Teste 2",
+      "week_day": "saturday",
+      "day_shift": "night",
+      "address": "Triider porto alegre",
+      "id": 5
     }
   ]
 }
