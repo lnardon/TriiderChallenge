@@ -7,6 +7,7 @@ import MobileCalendar from "../../components/MobileCalendar";
 
 function Homepage() {
   const [isOpen, setIsOpen] = useState(false);
+  const [size, setSize] = useState(window.innerWidth);
   const [refresher, setRefresher] = useState(Date.now());
   const [calendarData, setCalendarData] = useState([
     {
@@ -133,7 +134,11 @@ function Homepage() {
       }
       setCalendarData([...auxData]);
     })();
-  }, [refresher, calendarData]);
+
+    window.onresize = () => {
+      setSize(window.innerWidth);
+    };
+  }, [refresher]);
 
   return (
     <div className={styles.homepageContainer}>
@@ -147,7 +152,7 @@ function Homepage() {
         </button>
       </div>
       <div className={styles.calendarDiv}>
-        {window.innerWidth >= 800 ? (
+        {size >= 800 ? (
           <DesktopCalendar calendarData={calendarData} />
         ) : (
           <MobileCalendar calendarData={calendarData} />

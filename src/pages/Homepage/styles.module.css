@@ -1,9 +1,10 @@
 .homepageContainer {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: #e5e5e5;
+  padding: 1rem 0rem;
 }
 
 .createDiv {

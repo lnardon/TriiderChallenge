@@ -27,17 +27,29 @@ function MobileCalendar({ calendarData }) {
     <div className={styles.mobileCalendarContainer}>
       <h1 className={styles.title}>{calendarData[currentDay].title}</h1>
       <div className={styles.calendarDay}>
-        {calendarData[currentDay].shifts.map((shift) => {
-          return shift.available ? (
-            shift.info ? (
-              <EventSlot name={shift.info.name} address={shift.info.address} />
+        {calendarData[currentDay].available ? (
+          calendarData[currentDay].shifts.map((shift, index) => {
+            return shift.available ? (
+              shift.info ? (
+                <EventSlot
+                  key={index}
+                  name={shift.info.name}
+                  address={shift.info.address}
+                />
+              ) : (
+                <AvailableSlot key={index} />
+              )
             ) : (
-              <AvailableSlot />
-            )
-          ) : (
+              <UnavailableSlot key={index} />
+            );
+          })
+        ) : (
+          <>
             <UnavailableSlot />
-          );
-        })}
+            <UnavailableSlot />
+            <UnavailableSlot />
+          </>
+        )}
       </div>
       <div className={styles.btnsDiv}>
         <img

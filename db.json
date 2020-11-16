@@ -65,6 +65,14 @@
       "day_shift": "afternoon",
       "address": "Teste",
       "id": 3
+    },
+    {
+      "user_id": "2",
+      "name": "Quinta T",
+      "week_day": "thursday",
+      "day_shift": "afternoon",
+      "address": "Triider",
+      "id": 4
     }
   ]
 }
