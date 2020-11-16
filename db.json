@@ -38,6 +38,24 @@
       ],
       "price": "250",
       "id": 2
+    },
+    {
+      "name": "Lucas",
+      "email": "lucas@teste.com",
+      "password": "123",
+      "category": "magician",
+      "week_days": [
+        "monday",
+        "wednesday",
+        "saturday",
+        "sunday"
+      ],
+      "day_shifts": [
+        "morning",
+        "afternoon"
+      ],
+      "price": "250",
+      "id": 3
     }
   ],
   "events": [
@@ -81,6 +99,14 @@
       "day_shift": "night",
       "address": "Triider porto alegre",
       "id": 5
+    },
+    {
+      "user_id": "3",
+      "name": "Teste",
+      "week_day": "monday",
+      "day_shift": "morning",
+      "address": "Github",
+      "id": 6
     }
   ]
 }
