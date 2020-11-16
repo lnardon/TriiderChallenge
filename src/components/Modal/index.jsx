@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styles from "./styles.module.css";
 import closeIcon from "../../assets/close.svg";
 
-function Modal({ setIsOpen }) {
+function Modal({ setIsOpen, refresher }) {
   const [name, setName] = useState("");
   const [place, setPlace] = useState("");
   const [day, setDay] = useState("");
@@ -25,6 +25,7 @@ function Modal({ setIsOpen }) {
     });
 
     if (respose.status === 201) {
+      refresher(Date.now());
       setIsOpen(false);
       alert("Evento criado");
     } else {
